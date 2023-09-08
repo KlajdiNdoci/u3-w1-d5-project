@@ -14,10 +14,10 @@ function App() {
       <VideoSection filmTitle={"Star Wars"} sectionTitle={"Watch It Again"} />
       <VideoSection filmTitle={"spider-man"} sectionTitle={"New Releases"} />
       <MyFooter />
-      {/* <div style={{ minHeight: "100vh" }}>
+      <div style={{ minHeight: "100vh" }}>
         <ProfileHeader />
         <ProfileMain />
-      </div> */}
+      </div>
     </div>
   );
 }

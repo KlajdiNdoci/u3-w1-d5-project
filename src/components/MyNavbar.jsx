@@ -33,20 +33,18 @@ function MyNavbar() {
         </Navbar.Collapse>
         <div className="d-flex align-items-center">
           <div className="d-flex d-none d-md-flex align-items-center">
-            <Form className=" collapse d-none d-md-flex" role="search">
+            <Form id="nav-form" className="d-none d-md-flex text-white">
               <FormControl
                 id="nav-search"
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
-                className="form-control me-2 collapse rounded-pill bg-black"
+                className="form-control me-2 rounded-pill bg-black text-white"
               />
             </Form>
             <Button
-              variant="text-white fs-5 rounded-circle"
-              data-bs-toggle="collapse"
-              data-bs-target="#nav-search"
-              type="button"
+              variant="fs-5 rounded-circle"
+              onClick={() => document.getElementById("nav-search").classList.toggle("visible")}
             >
               <i className="bi bi-search text-white"></i>
             </Button>

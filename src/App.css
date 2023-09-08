@@ -145,6 +145,24 @@ footer {
   background-color: #141414;
 }
 
-.hidden-card {
-  display: none;
+@keyframes slide-in {
+  from {
+    width: 0;
+  }
+  to {
+    width: 200px;
+  }
+}
+
+#nav-search {
+  width: 0;
+  opacity: 0;
+  transition: width 0.3s, opacity 0.3s;
+  color: white;
+}
+
+#nav-search.visible {
+  width: 200px;
+  opacity: 1;
+  transition: width 0.3s, opacity 0.3s;
 }
